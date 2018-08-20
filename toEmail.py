@@ -48,7 +48,7 @@ def mail(sjr, familName):
         msg['From'] = EMAIL
         msg['to'] = sjr
         smtp.connect('smtphm.qiye.163.com', '25')  # smtp服务器地址
-        smtp.login(EMAIL, possword)
+        smtp.login(EMAIL, password)
         form_addr = EMAIL
         smtp.sendmail(EMAIL, sjr, msg.as_string())
         smtp.quit()
